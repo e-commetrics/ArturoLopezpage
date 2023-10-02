@@ -67,7 +67,7 @@ function Test() {
             controls // Controles
             width={'100%'}
             height={'100%'}
-          />
+          /> 
           {/* <video
             autoPlay
             muted
