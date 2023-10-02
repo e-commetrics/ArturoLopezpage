@@ -16,6 +16,8 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: 
+  [require("daisyui"),'prettier-plugin-tailwindcss'], 
+  
 });
 
