@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import video from './vid/HeroAL.mp4';
+// import video from './vid/HeroAL.mp4';
 import './App.css';
 import Navbar from './navlist';
 import AL from './img/AL';
@@ -104,8 +104,9 @@ function Test() {
             <div className="md:w-4/5">
               <h1 className="text-3xl md:text-4xl lg:text-5xl mt-24 text-[#E7D8D2] font-normal font-raleway">SOBRE NOSOTROS</h1>
               <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
-                Somos un consultorio médico especializado en medicina estética y antiedad. Los valores que nos caracterizan son la honestidad, el compromiso y la calidad en nuestros servicios, siempre será un honor resaltar la belleza y glamour de todos nuestros clientes.
-              </p>
+              Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
+
+</p>
               <div class="text-white text-xl flex justify-end mt-24 font-semibold font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
               <div class="text-white text-l flex justify-end mt- font-light font-raleway mr-2">Dr. Arturo Lopez<br /></div>
             </div>
