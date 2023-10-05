@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logo from './img/Artboard 1.png';
-import './styles/fonts.css'; // Importa el archivo de hoja de estilos de las fuentes personalizadas
 
 const NavList = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,13 +14,13 @@ const NavList = () => {
 
     return (
         <nav className={`py-4 transition-all duration-300 ${menuOpen ? 'fixed top-0 left-0 right-0 bottom-0 bg-white z-10' : 'absolute top-0 left-0 right-0'}`}>
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container flex items-center justify-between mx-auto">
                 <div className="flex items-center">
-                    <div className="text-white text-xl font-bold">
+                    <div className="text-xl font-bold text-white">
                         <img src={logo} className="w-64 h-24" alt="Logo" />
                     </div>
                 </div>
-                <div className="hidden md:flex justify-end items-center space-x-6 text-white font-raleway">
+                <div className="items-center justify-end hidden space-x-6 text-white md:flex font-raleway">
                     <a href="#" className="text-xl">
                         INICIO
                     </a>
@@ -35,18 +34,18 @@ const NavList = () => {
                         CONTACTO
                     </a>
                 </div>
-                <div className="md:hidden flex items-center mr-4">
+                <div className="flex items-center mr-4 md:hidden">
                     {menuOpen ? (
                         <button
                             onClick={closeMenu}
-                            className="text-black text-xl focus:outline-none"
+                            className="text-xl text-black focus:outline-none"
                         >
                             ✕
                         </button>
                     ) : (
                         <button
                             onClick={toggleMenu}
-                            className="text-white text-xl focus:outline-none"
+                            className="text-xl text-white focus:outline-none"
                         >
                             ☰
                         </button>
@@ -55,18 +54,18 @@ const NavList = () => {
             </div>
             {menuOpen && (
                 <div className="md:hidden">
-                    <ul className="text-center mt-4">
+                    <ul className="mt-4 text-center">
                         <li>
-                            <a href="#" className="block text-xl py-2" onClick={closeMenu}>INICIO</a>
+                            <a href="#" className="block py-2 text-xl" onClick={closeMenu}>INICIO</a>
                         </li>
                         <li>
-                            <a href="#" className="block text-xl py-2" onClick={closeMenu}>SERVICIO</a>
+                            <a href="#" className="block py-2 text-xl" onClick={closeMenu}>SERVICIO</a>
                         </li>
                         <li>
-                            <a href="#" className="block text-xl py-2" onClick={closeMenu}>SOBRE NOSOTROS</a>
+                            <a href="#" className="block py-2 text-xl" onClick={closeMenu}>SOBRE NOSOTROS</a>
                         </li>
                         <li>
-                            <a href="#" className="block text-xl py-2" onClick={closeMenu}>CONTACTO</a>
+                            <a href="#" className="block py-2 text-xl" onClick={closeMenu}>CONTACTO</a>
                         </li>
                     </ul>
                 </div>

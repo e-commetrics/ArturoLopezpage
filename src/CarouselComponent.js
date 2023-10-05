@@ -29,40 +29,40 @@ function CarouselComponent() {
     return (
         <div>
             <Slider {...settings}>
-            <div className="rounded-lg overflow-hidden">
+            <div className="overflow-hidden rounded-lg">
                     <img src={s1} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s2} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s3} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s4} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s5} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s6} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s7} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s8} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s9} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s10} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s11} className="w-full"/>
                 </div>
-                <div className="rounded-lg overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <img src={s12} className="w-full" />
                 </div>
             </Slider>

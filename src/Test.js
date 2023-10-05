@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import video from './vid/HeroAL.mp4';
+// import video from './vid/HeroAL.mp4';
 import './App.css';
 import Navbar from './navlist';
 import AL from './img/AL';
@@ -7,11 +7,17 @@ import IN from './img/instalaciones.png';
 import {
   faLocationDot,
   faEnvelope,
+  faChevronRight,
+  faChevronLeft,
+  faMarker
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faWhatsapp,
+  faFacebookF,
+  faInstagram,
+
 } from '@fortawesome/free-brands-svg-icons';
 import ServiceCarousel from './ServiceCarousel';
 import Fade from 'react-reveal/Slide';
@@ -32,15 +38,53 @@ import {
   DialogHeader,
   DialogBody,
   DialogFooter,
+  Carousel,
+  IconButton,
 
 } from "@material-tailwind/react";
-import dr from './img/Dr 2.png'
-import './styles/fonts.css'; // Importa el archivo de hoja de estilos de las fuentes personalizadas
+import dr from './img/nosotros AL.png'
 import logofooter from './img/logo_footer.png'
 import ReactPlayer from 'react-player';
-
+import hilos from './img/test1.png'
+import hilostexto from './img/test 2.png'
+import a1 from './img/a1.png'
+import a2 from './img/a2.png'
+import bo1 from './img/bo1.png'
+import bo2 from './img/bo2.png'
+import st1 from './img/st1.png'
+import st2 from './img/st2.png'
+import q1 from './img/q1.png'
+import q2 from './img/q2.png'
+import cg1 from './img/Cg1.png'
+import cg21 from './img/Cg21.png'
+import pr1 from './img/pr1.png'
+import pr2 from './img/pr2.png'
+import DrAl from './img/ALNosotros.png'
+import bgAgenda from './img/bg.png'
+import avatar from './img/avatar.png'
+import CarouselComponent from './CarouselComponent';
+import Testimonios from './Testimonios';
 
 function Test() {
+  const [instagramIconColor, setInstagramIconColor] = useState("#ffffff");
+  const [facebookIconColor, setFacebookIconColor] = useState("#ffffff");
+
+  const handleInstagramMouseEnter = () => {
+    setInstagramIconColor("#bfa090");
+  };
+
+  const handleInstagramMouseLeave = () => {
+    setInstagramIconColor("#ffffff");
+  };
+
+  const handleFacebookMouseEnter = () => {
+    setFacebookIconColor("#bfa090");
+  };
+
+  const handleFacebookMouseLeave = () => {
+    setFacebookIconColor("#ffffff");
+  };
+
   const [open, setOpen] = React.useState(false);
   const videoUrl = 'https://vimeo.com/869254219'
   const toggleOpen = () => setOpen((cur) => !cur);
@@ -67,7 +111,7 @@ function Test() {
             controls // Controles
             width={'100%'}
             height={'100%'}
-          /> 
+          />
           {/* <video
             autoPlay
             muted
@@ -102,12 +146,16 @@ function Test() {
         <div className="container mx-auto">
           <div className="flex flex-col items-start md:flex-row">
             <div className="md:w-4/5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl mt-24 text-[#E7D8D2] font-normal font-raleway">SOBRE NOSOTROS</h1>
+              <h1 className="text-3xl md:text-4xl lg:text-7xl mt-24 text-[#E7D8D2] text-stone-300 font-semibold font-montserrat">SOBRE NOSOTROS</h1>
               <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
-                Somos un consultorio médico especializado en medicina estética y antiedad. Los valores que nos caracterizan son la honestidad, el compromiso y la calidad en nuestros servicios, siempre será un honor resaltar la belleza y glamour de todos nuestros clientes.
+                Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, 
+                antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar
+                la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. 
+                El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; 
+                solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
               </p>
-              <div class="text-white text-xl flex justify-end mt-24 font-semibold font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
-              <div class="text-white text-l flex justify-end mt- font-light font-raleway mr-2">Dr. Arturo Lopez<br /></div>
+              <div className="flex justify-end mt-24 text-xl font-semibold text-white font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
+              <div className="flex justify-end mr-2 font-light text-white text-l mt- font-raleway">Dr. Arturo Lopez<br /></div>
             </div>
             <div className="mt-4 md:w-1/2 md:mt-0 md:ml-4">
               <img
@@ -116,148 +164,268 @@ function Test() {
                 className="w-full h-auto mt-4 mb-10 md:w-3/4 ml- md:ml-64 md:mt-0"
               />
             </div>
-
+          </div>
+          <div className="flex justify-center md:justify-end">
+            <a href="#"
+              className="group"
+              onMouseEnter={handleFacebookMouseEnter}
+              onMouseLeave={handleFacebookMouseLeave}>
+              <FontAwesomeIcon
+                className="w-12 h-9 group:hover:text-#211316"
+                icon={faFacebookF}
+                style={{ color: facebookIconColor }}
+              />
+            </a>
+            <a href="#"
+              className="group"
+              onMouseEnter={handleInstagramMouseEnter}
+              onMouseLeave={handleInstagramMouseLeave}>
+              <FontAwesomeIcon
+                className="w-12 h-10"
+                icon={faInstagram}
+                style={{ color: instagramIconColor }}
+              />
+            </a>
           </div>
         </div>
       </section>
 
+      {/* Tratamientos */}
+      <section className='flex items-center justify-center bg-white h-[10vh]'>
+        <div className="text-center text-[#AC463F] text-6xl font-semibold font-montserrat">Tratamientos </div>
+      </section>
 
-      {/* section servicios  */}
-      {/* <section id="section3" className="flex justify-center items-center min-h-[50vh] bg-[#bd7c5f] border-b-2 border-black overflow-x-auto">
-        <div className="flex flex-col-reverse text-lg text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl lg:flex-row">
-          <div className="flex flex-col items-center justify-center flex-1 w-full h-full text-center lg:mr-8">
-            <h2 className="mt-4 mb-8 text-2xl text-white lg:text-4xl font-century">
-              SERVICIOS QUE OFRECEMOS
-            </h2>
-            <ServiceCarousel />
-          </div>
-        </div>
-      </section> */}
-
-      {/* section agenda cita  */}
-      {/* <section className="flex justify-center items-center min-h-[50vh] bg-[#EED5C9] border-b-2 border-black overflow-x-auto">
-        <div className="flex flex-col text-lg text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl lg:flex-row">
-          <div className='flex flex-col items-center justify-center flex-1 w-full h-full text-center lg:mr-16'>
-
-            <Typography variant="h1" color="white" >
-              AGENDA TU CITA
-            </Typography>
-
-            <p className="mt-2 text-white lg:mt-4 font-century">Por cualquiera de nuestros métodos de contacto</p>
-            <div className="flex flex-col mt-4 lg:mt-8">
-              <Card className="w-96">
-                <List>
-                  <ListItem>
-                    <ListItemPrefix>
-                      <FontAwesomeIcon icon={faFacebook} className='h-8' style={{ color: "#1962e1" }} />
-                    </ListItemPrefix>
-                    <div>
-                      <Typography variant="h6" color="blue-gray">
-                        Dr. Arturo López
-                      </Typography>
-                    </div>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemPrefix>
-                      <FontAwesomeIcon icon={faEnvelope} flip className='h-7' style={{ color: "#324b77" }} />
-                    </ListItemPrefix>
-                    <div>
-                      <Typography variant="h6" color="blue-gray">
-                        ArturoLopez@gmail.com
-                      </Typography>
-                    </div>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemPrefix>
-                      <FontAwesomeIcon icon={faWhatsapp} className='h-8' style={{ color: "#33c016" }} />
-                    </ListItemPrefix>
-                    <div>
-                      <Typography variant="h6" color="blue-gray">
-                        664-978-6543
-                      </Typography>
-                    </div>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemPrefix>
-                      <FontAwesomeIcon icon={faLocationDot} className='h-8' bounce style={{ color: "#fc1d1d" }} />
-                    </ListItemPrefix>
-                    <div>
-                      <Typography variant="h6" color="blue-gray">
-                        Tijuana, Baja California
-                      </Typography>
-                    </div>
-                  </ListItem>
-                </List>
-              </Card>
+      {/* Carrousel  */}
+      <section className='h-auto bg-white border-black'>
+        <Carousel
+          autoplay={true}
+          autoplayDelay={8000}
+          loop={true}
+          transition={{ type: "spring", duration: 2 }}
+          className="rounded-xl"
+          navigation={({ setActiveIndex, activeIndex, length }) => (
+            <div className="absolute z-50 flex gap-2 bottom-4 left-2/4 -translate-x-2/4">
+              {new Array(length).fill("").map((_, i) => (
+                <span
+                  key={i}
+                  className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-12 bg-[#AC463F]" : "w-4 bg-black/50"
+                    }`}
+                  onClick={() => setActiveIndex(i)}
+                />
+              ))}
             </div>
-          </div>
-          <div className='flex items-center justify-center flex-1 w-full h-full mt-4 mb-4'>
-            <div className="border-4 border-white shadow-lg">
+          )}
+          prevArrow={({ handlePrev }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handlePrev}
+              className="!absolute top-2/4 left-4 -translate-y-2/4"
+            >
+              <FontAwesomeIcon icon={faChevronLeft} size="2xl" style={{ color: "#AC463F" }} />        </IconButton>
+          )}
+          nextArrow={({ handleNext }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handleNext}
+              className="!absolute top-2/4 !right-4 -translate-y-2/4"
+            >
+              <FontAwesomeIcon icon={faChevronRight} size="2xl" style={{ color: "#AC463F" }} />
+            </IconButton>
+          )}
+        >
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
               <img
-                className="object-cover object-center w-full h-96"
-                src={AL}
-                alt="nature image"
+                src={hilos}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={hilostexto}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
               />
             </div>
           </div>
 
-        </div>
-      </section> */}
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={a1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={a2}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
+          </div>
 
-
-      {/* section instalaciones */}
-      {/* <section className="bg-[#bd7c5f] border-b-2 border-black">
-        <div className="container py-8 mx-auto">
-          <h2 className="mb-4 text-2xl text-center text-white lg:text-4xl font-century">
-            CONOCE NUESTRAS INSTALACIONES
-          </h2>
-          <div className='flex justify-center'>
-            <Card className="flex items-center justify-center mt-12 w-96">
-              <CardHeader color="blue-gray" className="relative mt-6 h-54">
-                <img
-                  src={IN}
-                  alt="card-image"
-                />
-              </CardHeader>
-              <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                  Instalaciones
-                </Typography>
-                <Typography>
-                  The place is close to Barceloneta Beach and bus stop just 2 min by
-                  walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                  night life in Barcelona.
-                </Typography>
-              </CardBody>
-              <CardFooter className="pt-0">
-                <Button onClick={toggleOpen}>Mas informacion</Button>
-              </CardFooter>
-            </Card>
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={bo1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={bo2}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
           </div>
 
 
-          <Collapse open={open}>
-            <Card className="my-4 mx-auto w-[40vh]">
-              <CardBody>
-                <Typography>
-                  Aqui se mostrara mas informacion de las instalaciones.
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={st1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={st2}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
+          </div>
 
-                </Typography>
-              </CardBody>
-            </Card>
-          </Collapse>
+
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={q1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={q2}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
+          </div>
+
+
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={cg1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={cg21}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
+          </div>
+
+
+          <div className='relative w-full h-full'>
+            <div className="flex flex-col max-h-screen overflow-hidden md:flex-row">
+              <img
+                src={pr1}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+              <img
+                src={pr2}
+                alt="image hilos"
+                className="w-full h-auto md:w-1/2"
+              />
+            </div>
+          </div>
+
+
+        </Carousel>
+      </section>
+
+      {/* Boton agendar */}
+      <section className='w-full h-[10vh] flex items-center bg-white'>
+        <div className='container flex justify-center mx-auto'>
+          <div className="relative w-64 h-16">
+            <button className="w-64 h-16 left-0 top-0 absolute bg-white rounded-3xl border-2 border-pink-800 text-pink-800 text-4xl font-semibold font-raleway hover:text-white hover:bg-[#AC463F] hover:border-[#AC463F]">AGENDAR</button>
+          </div>
         </div>
-      </section> */}
+      </section>
+
+      <section className='w-auto h-auto bg-[#AC463F] relative overflow-hidden' style={{ backgroundImage: `url(${bgAgenda})` }}>
+        <div className="w-full bg-[#D9D9D9] h-2.5 mt-2 absolute top-10"></div> {/* Elemento encima de la sección */}
+
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <div className='flex flex-col items-center justify-center'>
+            <div className="text-[#E7DBD2] text-4xl md:text-8xl font-semibold font-montserrat text-center md:text-left sm:mt-14 sm:ml-14">Agenda una cita</div>
+            <div className="mt-4 text-2xl font-light text-center text-white md:ml-12 md:text-3xl font-montserrat md:text-left">Por cualquiera de nuestros métodos de contacto</div>
+
+            {/* Contenedor para la información */}
+            <div className="bg-[#AC463F] stats stats-vertical">
+              <div className="flex items-center stat">
+                <FontAwesomeIcon
+                  className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
+                  icon={faFacebookF}
+                  style={{ color: "#FFFF", }}
+                />
+                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">Dr. Arturo Lopez</div>
+              </div>
+              <div className="flex items-center stat">
+                <FontAwesomeIcon
+                  className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
+                  icon={faEnvelope}
+                  style={{ color: "#FFFF", }}
+                />
+                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">ArturoLopez@gmail.com</div>
+              </div>
+              <div className="flex items-center stat">
+                <FontAwesomeIcon
+                  className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
+                  icon={faWhatsapp}
+                  style={{ color: "#FFFF", }}
+                />
+                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">664 978 6543</div>
+              </div>
+              <div className="flex items-center stat">
+                <FontAwesomeIcon
+                  className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
+                  icon={faLocationDot}
+                  style={{ color: "#FFFF", }}
+                />
+                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">Tijuana Baja California</div>
+              </div>
+            </div>
+          </div>
+          <div className='col-span-1'>
+            <div className="flex items-center justify-center">
+              <img src={DrAl} alt="Imagen" className='flex items-center w-auto h-auto md:ml-16' /> {/* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */}
+            </div>
+          </div>
+          <div className="w-full bg-[#D9D9D9] h-2.5 mt-2 absolute bottom-10"></div> {/* Elemento debajo de la sección */}
+        </div>
+      </section>
+
+      <section className='flex flex-col items-center justify-center w-auto h-auto bg-white'>
+        <div className="text-[#AC463F] text-8xl font-semibold font-montserrat">Testimonios</div>
+        <Testimonios/>
+      </section>
 
       {/* section footer */}
-      <footer className="w-full p-8 bg-white">
-        <div className="flex flex-row flex-wrap items-center justify-center text-center bg-white gap-y-6 gap-x-12 md:justify-between">
+      <footer className="bg-[#211316] w-full p-8">
+        <div className="flex flex-row flex-wrap items-center justify-center text-center bg-[#211316] gap-y-6 gap-x-12 md:justify-between">
           <img src={logofooter} alt="Logo" className="w-12" />
           <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
             <li>
               <Typography
                 as="a"
-                color="blue-gray"
+                color="white"
                 className="font-normal transition-colors hover:text-[#AC463F] focus:text-[#AC463F]"
                 onClick={handleOpenAbout}
               >
@@ -267,19 +435,19 @@ function Test() {
             <li>
               <Typography
                 as="a"
-                color="blue-gray"
                 onClick={handleOpenTerms}
+                color="white"
                 className="font-normal transition-colors hover:text-[#AC463F] focus:text-[#AC463F]"
-              >
+                >
                 Terminos y Servicio
               </Typography>
             </li>
             <li>
               <Typography
                 as="a"
-                color="blue-gray"
-                onClick={handleOpenPolicy}
+                color="white"
                 className="font-normal transition-colors hover:text-[#AC463F] focus:text-[#AC463F]"
+                onClick={handleOpenPolicy}
               >
                 Política de Privacidad
               </Typography>
@@ -288,18 +456,18 @@ function Test() {
               <Typography
                 as="a"
                 href="#Nosotros"
-                color="blue-gray"
+                color="white"
                 className="font-normal transition-colors hover:text-[#AC463F] focus:text-[#AC463F]"
-              >
+                >
                 Contactanos
               </Typography>
             </li>
           </ul>
         </div>
         <hr className="my-8 border-blue-gray-50" />
-        <Typography color="blue-gray" className="font-normal text-center">
+        <Typography color="white" className="font-normal text-center">
           Todos los derechos reservados &copy; 2023, doctorarturolopez.com desarrollado por{' '}
-          <a href="https://e-commetrics.com" target="_blank" className="text-[#AC463F] hover:text-[#AC463F]">
+          <a href="https://e-commetrics.com" target="_blank" className="text-white hover:text-[#AC463F]">
             e-commetrics.com
           </a>
         </Typography>
@@ -310,21 +478,21 @@ function Test() {
         <DialogBody divider className="h-[20rem] overflow-scroll">
           <Typography className="font-normal">
             <p className='font-bold'>
-            Encuentra al Dr. Arturo López, Médico Cirujano y Especialista en Medicina Estética y Antienvejecimiento en Playas de Tijuana
+              Encuentra al Dr. Arturo López, Médico Cirujano y Especialista en Medicina Estética y Antienvejecimiento en Playas de Tijuana
             </p>
-            
+
             Descubre la excelencia en medicina estética y antiedad con el Dr. Arturo López, un experto comprometido en realzar la belleza natural de cada paciente. Con una atención personalizada y una amplia experiencia en el campo, el Dr. López ofrece la mejor alternativa para lograr un equilibrio perfecto entre salud, bienestar y belleza.
             <br /><br />
             <p className='font-bold'>
-            Destacando la Belleza que Ya Posees
+              Destacando la Belleza que Ya Posees
             </p>
-            
+
             El Dr. Arturo López se dedica a ayudar a todas las personas a preservar y resaltar su belleza inherente. Su enfoque se basa en el entendimiento de que cada individuo es único, y su tratamiento se adapta a las necesidades específicas de cada paciente.
             <br /><br />
             <p className='font-bold'>
-            Un Balance Integral entre Salud, Bienestar y Belleza
+              Un Balance Integral entre Salud, Bienestar y Belleza
             </p>
-            
+
             En colaboración con el Dr. López, puedes lograr un equilibrio completo entre salud, bienestar y belleza. Su dedicación a la medicina estética y antienvejecimiento se traduce en resultados sobresalientes que te permiten sentirte seguro y radiante en tu propia piel.
             <br />
             Confía en el Dr. Arturo López para alcanzar la mejor versión de ti mismo. Tu belleza es única, y él está aquí para ayudarte a resaltarla de manera experta.
@@ -408,7 +576,6 @@ function Test() {
           </Button>
         </DialogFooter>
       </Dialog>
-
     </div>
   );
 }
