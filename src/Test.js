@@ -66,23 +66,23 @@ import CarouselComponent from './CarouselComponent';
 import Testimonios from './Testimonios';
 
 function Test() {
-  const [instagramIconColor, setInstagramIconColor] = useState("#ffffff");
-  const [facebookIconColor, setFacebookIconColor] = useState("#ffffff");
+  const [instagramIconColor, setInstagramIconColor] = useState("#AC463F");
+  const [facebookIconColor, setFacebookIconColor] = useState("#AC463F");
 
   const handleInstagramMouseEnter = () => {
-    setInstagramIconColor("#bfa090");
+    setInstagramIconColor("#ffff");
   };
 
   const handleInstagramMouseLeave = () => {
-    setInstagramIconColor("#ffffff");
+    setInstagramIconColor("#AC463F");
   };
 
   const handleFacebookMouseEnter = () => {
-    setFacebookIconColor("#bfa090");
+    setFacebookIconColor("#ffff");
   };
 
   const handleFacebookMouseLeave = () => {
-    setFacebookIconColor("#ffffff");
+    setFacebookIconColor("#AC463F");
   };
 
   const [open, setOpen] = React.useState(false);
@@ -131,7 +131,7 @@ function Test() {
 
 
       {/* section logo */}
-      <section id="section1" className='w-full h-[77vh] flex items-center border-black bg-[#211316]'>
+      <section id="section1" className='w-full h-[77vh] flex items-center border-black bg-[#AC463F]'>
         <div className="container mx-auto text-center">
           <div className="w-full mx-auto md:w-1/2">
             <Fade bottom delay={200} >
@@ -142,20 +142,22 @@ function Test() {
       </section>
 
       {/* section nosotros */}
-      <section id='#Nosotros' className="bg-[#AC463F] w-full p-8 overflow-hidden">
+      <section id='#Nosotros' className="bg-[#E8DBD2] w-full p-8 overflow-hidden">
         <div className="container mx-auto">
           <div className="flex flex-col items-start md:flex-row">
             <div className="md:w-4/5">
-              <h1 className="text-3xl md:text-4xl lg:text-7xl mt-24 text-[#E7D8D2] text-stone-300 font-semibold font-montserrat">SOBRE NOSOTROS</h1>
-              <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
+              <h1 className="text-3xl md:text-4xl lg:text-7xl mt-24 text-[#AC463F] text-stone-300 font-semibold font-montserrat">SOBRE NOSOTROS</h1>
+              <p className="mt-10 text-2xl font-medium text-justify text-black font-raleway">
                 Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, 
                 antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar
                 la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. 
+              </p>
+              <p className="text-2xl font-medium text-justify text-black font-raleway">
                 El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; 
                 solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
               </p>
-              <div className="flex justify-end mt-24 text-xl font-semibold text-white font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
-              <div className="flex justify-end mr-2 font-light text-white text-l mt- font-raleway">Dr. Arturo Lopez<br /></div>
+              <div className="flex justify-end mt-24 text-xl font-semibold text-black font-raleway">"Un paciente satisfecho, siempre será el mejor regalo para mí" </div>
+              <div className="flex justify-end mr-2 font-light text-black text-l mt- font-raleway">Dr. Arturo Lopez<br /></div>
             </div>
             <div className="mt-4 md:w-1/2 md:mt-0 md:ml-4">
               <img
@@ -359,47 +361,47 @@ function Test() {
         </div>
       </section>
 
-      <section className='w-auto h-auto bg-[#AC463F] relative overflow-hidden' style={{ backgroundImage: `url(${bgAgenda})` }}>
-        <div className="w-full bg-[#D9D9D9] h-2.5 mt-2 absolute top-10"></div> {/* Elemento encima de la sección */}
+      <section className='w-auto h-auto bg-[#E8DBD2] relative overflow-hidden' style={{ backgroundImage: `url(${bgAgenda})` }}>
+        <div className="w-full bg-[#AC463F] h-2.5 mt-2 absolute top-10"></div> {/* Elemento encima de la sección */}
 
         <div className='grid grid-cols-1 md:grid-cols-2'>
           <div className='flex flex-col items-center justify-center'>
-            <div className="text-[#E7DBD2] text-4xl md:text-8xl font-semibold font-montserrat text-center md:text-left sm:mt-14 sm:ml-14">Agenda una cita</div>
-            <div className="mt-4 text-2xl font-light text-center text-white md:ml-12 md:text-3xl font-montserrat md:text-left">Por cualquiera de nuestros métodos de contacto</div>
+            <div className="text-[#AC463F] text-4xl md:text-8xl font-semibold font-montserrat text-center md:text-left sm:mt-14 sm:ml-14">Agenda una cita</div>
+            <div className="mt-4 text-2xl font-light text-center text-black md:ml-12 md:text-3xl font-montserrat md:text-left">Por cualquiera de nuestros métodos de contacto</div>
 
             {/* Contenedor para la información */}
-            <div className="bg-[#AC463F] stats stats-vertical">
+            <div className="bg-[#E8DBD2] stats stats-vertical">
               <div className="flex items-center stat">
                 <FontAwesomeIcon
                   className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
                   icon={faFacebookF}
-                  style={{ color: "#FFFF", }}
+                  style={{ color: "#AC463F ", }}
                 />
-                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">Dr. Arturo Lopez</div>
+                <div className="text-xl font-semibold text-black md:text-2xl lg:text-3xl font-raleway">Dr. Arturo Lopez</div>
               </div>
               <div className="flex items-center stat">
                 <FontAwesomeIcon
                   className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
                   icon={faEnvelope}
-                  style={{ color: "#FFFF", }}
+                  style={{ color: "#AC463F ", }}
                 />
-                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">ArturoLopez@gmail.com</div>
+                <div className="text-xl font-semibold text-black md:text-2xl lg:text-3xl font-raleway">ArturoLopez@gmail.com</div>
               </div>
               <div className="flex items-center stat">
                 <FontAwesomeIcon
                   className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
                   icon={faWhatsapp}
-                  style={{ color: "#FFFF", }}
+                  style={{ color: "#AC463F ", }}
                 />
-                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">664 978 6543</div>
+                <div className="text-xl font-semibold text-black md:text-2xl lg:text-3xl font-raleway">664 978 6543</div>
               </div>
               <div className="flex items-center stat">
                 <FontAwesomeIcon
                   className="w-8 h-8 md:w-10 md:h-10 text-2xl md:text-3xl group:hover:text-#211316"
                   icon={faLocationDot}
-                  style={{ color: "#FFFF", }}
+                  style={{ color: "#AC463F ", }}
                 />
-                <div className="text-xl font-semibold text-white md:text-2xl lg:text-3xl font-raleway">Tijuana Baja California</div>
+                <div className="text-xl font-semibold text-black md:text-2xl lg:text-3xl font-raleway">Tijuana Baja California</div>
               </div>
             </div>
           </div>
@@ -408,7 +410,7 @@ function Test() {
               <img src={DrAl} alt="Imagen" className='flex items-center w-auto h-auto md:ml-16' /> {/* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */}
             </div>
           </div>
-          <div className="w-full bg-[#D9D9D9] h-2.5 mt-2 absolute bottom-10"></div> {/* Elemento debajo de la sección */}
+          <div className="w-full bg-[#AC463F] h-2.5 mt-2 absolute bottom-10"></div> {/* Elemento debajo de la sección */}
         </div>
       </section>
 
