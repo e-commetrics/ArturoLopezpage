@@ -194,7 +194,7 @@ function Test() {
 
       {/* Tratamientos */}
       <section className='flex items-center justify-center bg-white h-[10vh]'>
-        <div className="text-center text-[#AC463F] text-6xl font-semibold font-montserrat">Tratamientos </div>
+        <div className="text-center text-[#AC463F] text-5xl font-semibold font-montserrat">Tratamientos </div>
       </section>
 
       {/* Carrousel  */}
@@ -414,10 +414,13 @@ function Test() {
         </div>
       </section>
 
-      <section className='flex flex-col items-center justify-center w-auto h-auto bg-white'>
-        <div className="text-[#AC463F] text-8xl font-semibold font-montserrat">Testimonios</div>
-        <Testimonios/>
-      </section>
+      <section className='py-8 bg-white md:py-16'>
+    <div className="text-[#AC463F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold font-montserrat text-center">
+        Testimonios
+    </div>
+    <Testimonios/>
+</section>
+
 
       {/* section footer */}
       <footer className="bg-[#211316] w-full p-8">
