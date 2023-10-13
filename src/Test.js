@@ -104,9 +104,9 @@ function Test() {
             <div className="md:w-4/5">
               <h1 className="text-3xl md:text-4xl lg:text-5xl mt-24 text-[#E7D8D2] font-normal font-raleway">SOBRE NOSOTROS</h1>
               <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
-              Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
+                Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
 
-</p>
+              </p>
               <div class="text-white text-xl flex justify-end mt-24 font-semibold font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
               <div class="text-white text-l flex justify-end mt- font-light font-raleway mr-2">Dr. Arturo Lopez<br /></div>
             </div>
@@ -299,7 +299,7 @@ function Test() {
         </div>
         <hr className="my-8 border-blue-gray-50" />
         <Typography color="blue-gray" className="font-normal text-center">
-          Todos los derechos reservados &copy; 2023, doctorarturolopez.com desarrollado por{' '}
+          Todos los derechos reservados Dr. Arturo López 2023 &copy;, doctorarturolopez.com es desarrollado por{' '}
           <a href="https://e-commetrics.com" target="_blank" className="text-[#AC463F] hover:text-[#AC463F]">
             e-commetrics.com
           </a>
@@ -311,21 +311,21 @@ function Test() {
         <DialogBody divider className="h-[20rem] overflow-scroll">
           <Typography className="font-normal">
             <p className='font-bold'>
-            Encuentra al Dr. Arturo López, Médico Cirujano y Especialista en Medicina Estética y Antienvejecimiento en Playas de Tijuana
+              Encuentra al Dr. Arturo López, Médico Cirujano y Especialista en Medicina Estética y Antienvejecimiento en Playas de Tijuana
             </p>
-            
+
             Descubre la excelencia en medicina estética y antiedad con el Dr. Arturo López, un experto comprometido en realzar la belleza natural de cada paciente. Con una atención personalizada y una amplia experiencia en el campo, el Dr. López ofrece la mejor alternativa para lograr un equilibrio perfecto entre salud, bienestar y belleza.
             <br /><br />
             <p className='font-bold'>
-            Destacando la Belleza que Ya Posees
+              Destacando la Belleza que Ya Posees
             </p>
-            
+
             El Dr. Arturo López se dedica a ayudar a todas las personas a preservar y resaltar su belleza inherente. Su enfoque se basa en el entendimiento de que cada individuo es único, y su tratamiento se adapta a las necesidades específicas de cada paciente.
             <br /><br />
             <p className='font-bold'>
-            Un Balance Integral entre Salud, Bienestar y Belleza
+              Un Balance Integral entre Salud, Bienestar y Belleza
             </p>
-            
+
             En colaboración con el Dr. López, puedes lograr un equilibrio completo entre salud, bienestar y belleza. Su dedicación a la medicina estética y antienvejecimiento se traduce en resultados sobresalientes que te permiten sentirte seguro y radiante en tu propia piel.
             <br />
             Confía en el Dr. Arturo López para alcanzar la mejor versión de ti mismo. Tu belleza es única, y él está aquí para ayudarte a resaltarla de manera experta.
