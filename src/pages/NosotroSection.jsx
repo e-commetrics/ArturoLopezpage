@@ -27,26 +27,28 @@ function NosotroSection() {
         <div className="flex flex-col items-start md:flex-row">
           <div className="md:w-4/5">
             <h1 className="text-3xl md:text-4xl lg:text-7xl mt-24 text-[#AC463F] text-stone-300 font-semibold font-montserrat">
-              SOBRE NOSOTROS
+              Conoce al Doctor en Playas de Tijuana
             </h1>
             <p className="mt-10 text-2xl font-medium text-justify text-black font-raleway">
-              Encuentra al doctor Arturo López, médico cirujano y especialista
-              en medicina estética, antiedad y antienvejecimiento en playas de
-              Tijuana con la mejor alternativa para resaltar la naturaleza de
-              cada paciente creando un balance entre salud bienestar y belleza.
+              Encontrarás al Doctor Arturo López, médico cirujano y especialista
+              en medicina estética, antiedad y antienvejecimiento en "Playas de
+              Tijuana".
             </p>
-            <p className="text-2xl font-medium text-justify text-black font-raleway">
-              El Dr. Arturo López puede ayudar a todas las personas a preservar
-              y resaltar una belleza que ya existe; solamente le hace falta ese
-              pequeño empuje especializado a crear un balance completo entre
-              salud bienestar y belleza
+            <p className="mt-4 text-2xl font-medium text-justify text-black font-raleway">
+              El Dr. tiene la mejor alternativa para resaltar la naturaleza de
+              cada paciente, creando un balance entre salud, bienestar y
+              belleza.
+            </p>
+            <p className="mt-4 text-2xl font-medium text-justify text-black font-raleway">
+              El Dr. Arturo López ayuda a todas las personas a cuidar su salud y
+              a preservar la belleza que ya existe.
             </p>
             <div className="flex justify-end mt-24 text-xl font-semibold text-black font-raleway">
-              "Un paciente satisfecho, siempre será el mejor regalo para mí"{" "}
+              "Permíteme acompañarte en ese pequeño empuje para un balance
+              completo entre salud, bienestar y belleza."
             </div>
-            <div className="flex justify-end mr-2 font-light text-black text-l mt- font-raleway">
-              Dr. Arturo Lopez
-              <br />
+            <div className="flex justify-end mr-2 font-bold text-black text-l mt- font-raleway">
+              Dr. Arturo López
             </div>
           </div>
           <div className="mt-4 md:w-1/2 md:mt-0 md:ml-4">

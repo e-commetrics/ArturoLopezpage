@@ -16,9 +16,9 @@ function AL() {
       <HeroSection />
       <LogoSection />
       <Nosotros />
-      <CarrouselSection />
+      {/* <CarrouselSection />
       <AgendaSection />
-      <TestimonioSection />
+      <TestimonioSection /> */}
       <ContactoSection />
       <FooterSection />     
     </div>
