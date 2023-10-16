@@ -102,13 +102,30 @@ function Test() {
         <div className="container mx-auto">
           <div className="flex flex-col items-start md:flex-row">
             <div className="md:w-4/5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl mt-24 text-[#E7D8D2] font-normal font-raleway">SOBRE NOSOTROS</h1>
-              <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
-                Encuentra al doctor Arturo López, médico cirujano y especialista en medicina estética, antiedad y antienvejecimiento en playas de Tijuana con la mejor alternativa para resaltar la naturaleza de cada paciente creando un balance entre salud bienestar y belleza. El Dr. Arturo López puede ayudar a todas las personas a preservar y resaltar una belleza que ya existe; solamente le hace falta ese pequeño empuje especializado a crear un balance completo entre salud bienestar y belleza
-
-              </p>
-              <div class="text-white text-xl flex justify-end mt-24 font-semibold font-raleway">"Un cliente satisfecho, siempre será el mejor regalo para mí" </div>
-              <div class="text-white text-l flex justify-end mt- font-light font-raleway mr-2">Dr. Arturo Lopez<br /></div>
+            <h1 className="mt-24 text-3xl font-semibold text-white md:text-4xl lg:text-7xl text-stone-300 font-montserrat">
+              Conoce al Doctor en Playas de Tijuana
+            </h1>
+            <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
+              Encontrarás al Doctor Arturo López, médico cirujano y especialista
+              en medicina estética, antiedad y antienvejecimiento en "Playas de
+              Tijuana".
+            </p>
+            <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
+              El Dr. tiene la mejor alternativa para resaltar la naturaleza de
+              cada paciente, creando un balance entre salud, bienestar y
+              belleza.
+            </p>
+            <p className="mt-10 text-2xl font-medium text-justify text-white font-raleway">
+              El Dr. Arturo López ayuda a todas las personas a cuidar su salud y
+              a preservar la belleza que ya existe.
+            </p>
+            <div className="flex justify-end mt-24 text-xl font-semibold text-white font-raleway">
+              "Permíteme acompañarte en ese pequeño empuje para un balance
+              completo entre salud, bienestar y belleza."
+            </div>
+            <div className="flex justify-end mr-2 font-bold text-white text-l mt- font-raleway">
+              Dr. Arturo López
+            </div>
             </div>
             <div className="mt-4 md:w-1/2 md:mt-0 md:ml-4">
               <img
@@ -121,6 +138,7 @@ function Test() {
           </div>
         </div>
       </section>
+
 
 
       {/* section servicios  */}
@@ -249,6 +267,7 @@ function Test() {
           </Collapse>
         </div>
       </section> */}
+
 
       {/* section footer */}
       <footer className="w-full p-8 bg-white">
