@@ -11,8 +11,12 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.1",
+    "date-fns-tz": "^2.0.0",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
+    "react-datepicker": "^4.20.0",
     "react-dom": "^18.2.0",
     "react-image-lightbox": "^5.1.4",
     "react-modal": "^3.16.1",
@@ -25,6 +29,7 @@
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",
+    "sonner": "^1.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

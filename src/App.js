@@ -1,22 +1,19 @@
+
 import React from 'react';
 import './App.css';
 
-import About from './Test'
-import Home from './Home'
+import Index from './AL'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     
-    <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden">
-      {/* Sección de video */}
+    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <Router>
         <Routes>
-          <Route path="/" element={<About />} /> 
-          <Route path="/AL" element={<Home />} />
+          <Route path="/" element={<Index />} /> 
         </Routes>
       </Router>
-    
     </div>
   );
 }
