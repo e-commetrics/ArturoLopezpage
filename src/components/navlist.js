@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../img/Artboard 1.png";
+import logo from "../img/doctor arturo lopez en playas de tijuana control rejuvenecimiento antiedad y bienestar acido hialuronico toxina botulinica hilos tensores.png";
 
 const NavList = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ const NavList = () => {
       <div className="container flex items-center justify-between mx-auto">
         <div className="flex items-center">
           <div className="text-xl font-bold text-white">
-            <img src={logo} className="w-64 h-24" alt="Logo" />
+            <img src={logo} className="w-64 h-24" alt="Conoce al doctor arturo lopez en playas de tijuana y lleva un control médico y de rejuvenecimiento antiedad y bienestar con tratamientos en ácido hialuronico, toxina botulínica o botox, e hilos tensores" />
           </div>
         </div>
         <div className="items-center justify-end hidden space-x-6 text-white md:flex font-raleway">

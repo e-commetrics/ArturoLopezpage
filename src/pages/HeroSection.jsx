@@ -1,10 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import Navbar from "../components/navlist";
-const videoUrl = "https://vimeo.com/869254219";
 // import video from '../vid/HeroAL.mp4';
 
 function HeroSection() {
+
+  const videoUrl = "https://vimeo.com/869254219";
+
   return (
     <section className="w-full h-screen flex justify-center items-center border-black bg-[#210316]">
       <div className="w-screen h-screen">
@@ -32,7 +34,7 @@ function HeroSection() {
       </div>
       <Navbar />
     </section>
-  );
+  ); 
 }
-
+ 
 export default HeroSection;
