@@ -9,10 +9,11 @@ module.exports = withMT({
     theme: {
     extend: {
       fontFamily: {
-        raleway: ['Raleway', 'sans'],
-        century: ['Century Gothic', 'sans'],
-        sanseriffic: ['Sanseriffic', 'sans'],
-        Helvetica: ['Helvetica Neue', 'sans'],
+        raleway: ['Raleway'],
+        century: ['Century Gothic'],
+        sanseriffic: ['Sanseriffic'],
+        Helvetica: ['Helvetica Neue'],
+        montserrat: ['Montserrat'],
       },
     },
   },
