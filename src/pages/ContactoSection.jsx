@@ -54,7 +54,7 @@ const ContactoSection = () => {
     };
 
     axios
-      .post("http://localhost:3001/contacto", formData)
+      .post("https://doctorarturolopez.com/contacto", formData)
       .then((response) => {
         // Aquí puedes manejar la respuesta. Por ejemplo:
         toast.success("Información de contacto enviada con éxito!");
@@ -73,7 +73,7 @@ const ContactoSection = () => {
     if (selectedDate) {
       const formattedDate = format(selectedDate, "yyyy-MM-dd");
       axios
-        .get(`http://localhost:3001/contacto/horas-ocupadas/${formattedDate}`)
+        .get(`https://doctorarturolopez.com/contacto/horas-ocupadas/${formattedDate}`)
         .then((response) => {
           const times = response.data.map((item) => {
             return new Date(2022, 1, 1, item.hour, item.minute); // Puedes usar cualquier año, mes y día, sólo nos importa la hora y el minuto
