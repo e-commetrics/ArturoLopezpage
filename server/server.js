@@ -3,6 +3,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
 const nodemailer = require("nodemailer");
+const { SitemapStream, streamToPromise } = require('sitemap');
+const { Readable } = require('stream');
 
 const app = express();
 
@@ -63,6 +65,23 @@ app.post("/contacto", (req, res) => {
     //   }
     // });
   });
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  let sitemap = new SitemapStream({ hostname: 'https://doctorarturolopez.com/' });
+
+  // Lista de todas las rutas posibles en tu aplicación
+  const routesArray = [ '/',];
+
+  const source = Readable.from(routesArray.map(url => ({ url: url, changefreq: 'monthly', priority: 1.0 })));
+
+  source
+    .pipe(sitemap)
+    .pipe(res)
+    .on('error', (error) => console.error(error))
+    .on('finish', () => console.log('Sitemap creado con éxito'));
+
+  res.header('Content-Type', 'application/xml');
 });
 
 app.listen(3001, () => {

@@ -59,8 +59,8 @@ function NosotroSection() {
             />
             <div className="flex justify-center md:mr-0 md:justify-center"> 
 
-            <a
-              href="#"
+            {/* <a
+              href=""
               className="group"
               onMouseEnter={handleFacebookMouseEnter}
               onMouseLeave={handleFacebookMouseLeave}
@@ -70,9 +70,9 @@ function NosotroSection() {
                 icon={faFacebookF}
                 style={{ color: facebookIconColor }}
               />
-            </a>
+            </a> */}
             <a
-              href="#"
+              href="https://www.instagram.com/arturolopezmd"
               className="group"
               onMouseEnter={handleInstagramMouseEnter}
               onMouseLeave={handleInstagramMouseLeave}

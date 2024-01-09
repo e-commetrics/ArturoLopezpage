@@ -7,7 +7,7 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
-import logofooter from "../img/logo_footer.png";
+import logofooter from "../img/Visita Playas de Tijuana and meet Doctor Arturo Lopez and Enjoy The Benefits of Aesthetic.png";
 
 function FooterSection() {
   // funciones para abrir Dialogs
@@ -23,7 +23,7 @@ function FooterSection() {
     <div>
       <footer className="bg-[#211316] w-full p-8">
         <div className="flex flex-row flex-wrap items-center justify-center text-center bg-[#211316] gap-y-6 gap-x-12 md:justify-between">
-          <img src={logofooter} alt="Logo" className="w-12" />
+          <img src={logofooter} alt="Enjoy The Benefits of Aesthetic Medicine with Doctor Arturo Lopez by Rejuvenating Your Skin, Enhancing Your Natural Features and Body Contouring and Sculpting" className="w-12" />
           <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
             <li>
               <Typography

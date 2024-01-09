@@ -27,7 +27,7 @@ const NavList = () => {
           </div>
         </div>
         <div className="items-center justify-end hidden space-x-6 text-white md:flex font-raleway">
-          <a href="#" className="text-xl">
+          {/* <a href="#" className="text-xl">
             INICIO
           </a>
           <a href="#" className="text-xl">
@@ -38,7 +38,7 @@ const NavList = () => {
           </a>
           <a href="#" className="text-xl">
             CONTACTO
-          </a>
+          </a> */}
         </div>
         <div className="flex items-center mr-4 md:hidden">
           {menuOpen ? (
@@ -61,7 +61,7 @@ const NavList = () => {
       {menuOpen && (
         <div className="md:hidden">
           <ul className="mt-4 text-center">
-            <li>
+            {/* <li>
               <a href="#" className="block py-2 text-xl" onClick={closeMenu}>
                 INICIO
               </a>
@@ -80,7 +80,7 @@ const NavList = () => {
               <a href="#" className="block py-2 text-xl" onClick={closeMenu}>
                 CONTACTO
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}
